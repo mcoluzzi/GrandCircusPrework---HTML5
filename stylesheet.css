@@ -1,10 +1,17 @@
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
 }
-@media (min-width: 600-px) { //Mobile First
-		
+@media (max-width: 600px) {
+	.portfolio {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-around;
+		width: auto;
 	}
+}
 
 h1 {
 	position: relative;
@@ -36,14 +43,17 @@ form input {
 }
 
 #welcome {
-	display: block;
 	padding: 30px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 #welcome p {
-	display: block;
 	padding: 30px 30px 30px 0px;
 	width: 300px;
+
+
 }
 
 .nav {
@@ -82,7 +92,7 @@ form input {
 
 .portfolio {
 	padding: 20px;
-	margin: 10px;
+	margin: 0px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -108,5 +118,19 @@ form input {
 }
 
 .submitBut {
-	margin-top: 15px;
+	margin-t
 }
+
+.image {
+	width: auto;
+
+}
+
+.facts, .favs{
+		padding: 30px;
+    margin: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+	}
